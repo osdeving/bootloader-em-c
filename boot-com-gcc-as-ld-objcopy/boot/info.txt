@@ -1,0 +1,2 @@
+O arquivo ex5.c foi corrigido e está funcionado.
+Troquei .code16 por .code16gcc e agora está tudo ok.

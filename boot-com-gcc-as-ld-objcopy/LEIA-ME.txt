@@ -1,0 +1,54 @@
+boot-com-gcc-as-ld-objcopy.zip
+/LEIA-ME.txt
+/boot/ex1.S
+/boot/ex2.S
+/boot/ex3.S
+/boot/ex4.c
+/boot/script.ld
+
+Os exemplos em /boot/ podem ser úteis para os programadores que pretendem 
+utilizar ferramentas comuns em Unix-Like-Systems para criação de programas de
+boot. Muitas pessoas indicam o assembler nasm. Algumas pessoas também alegam
+que não tem como criar programas de boot em C. Não vejo motivo para essa
+animosidade que o pessoal tem com o GAS. A sintaxe que o GAS usa é um pouco
+prolixa, devo dizer. No entanto, a simbiose do GAS, LD e GCC, ou, pra ser mais
+exato, coreutils, binutils e GCC, torna o desenvolvimento muito mais fluído.
+Interessante o suficiente, eu editei e testei esses exemplos no Windows 8.
+Isso caracteriza mais um bom motivo para aprender usar essas ferramentas,
+visto que uma mudança repentina de plataforma vai surtir menos impacto no
+projeto.
+
+Os exemplos utilizam as seguintes ferramentas:
+
+as - GNU Assembler (o infame GAS, pacote binutils)
+ld - GNU Linker (pacote binutils)
+objcopy - (pacote binutils)
+gcc - GNU Compiler Collection (pacote build-essential tem C e C++)
+
+Para testar e criar/gravar imagens de disco, eu usei o bochs (emulador PC x86)
+e o dd (do pacote coreutils).
+
+Observação:
+Meus exemplos são pequenas modificações dos encontrados no artigo do primeiro e
+segundo link abaixo. A única vantagem em utilizar meus exemplos é que
+eu os fiz de maneira mais enxuta e dei foco na utilização, então pode ser útil
+pra quem precisa apenas de algumas dicas. Se você quiser maiores detalhes sobre
+o processo de boot e bootloaders, utilize os links abaixo.
+
+Meus agradecimentos vão para o autor dos artigos:
+
+Writing a boot loader in Assembly and C - Part 1
+Writing a boot loader in Assembly and C - Part 2
+
+Fontes:
+
+codeproject.com/Articles/664165/Writing-a-boot-loader-in-Assembly-and-C-Part/
+codeproject.com/Articles/668422/Writing-a-boot-loader-in-Assembly-and-C-Part/
+bochs.sourceforge.net/ 
+sourceware.org/binutils/docs/ld/ 
+ibiblio.org/gferg/ldp/GCC-Inline-Assembly-HOWTO.html 
+wiki.osdev.org/Main_Page/
+stanislavs.org/helppc/ 
+panthema.net/2006/helppc21/HelpPC-2.10-HTML/
+
+*** todos os links acima estavam online em: 28/05/2014 ***
